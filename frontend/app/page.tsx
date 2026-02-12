@@ -10,6 +10,7 @@ export default function Home() {
     wsRef.current = ws
 
     ws.onopen = () => {
+        console.log("websocket connected")
       sendEvent("page_view", { page: "/" })
     }
 
