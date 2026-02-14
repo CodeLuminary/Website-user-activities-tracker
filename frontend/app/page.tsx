@@ -35,7 +35,7 @@ export default function Home() {
     <main style={{ padding: 40 }}>
       <h1>User Behaviour Tracking</h1>
 
-      <button
+      <button className="button"
         onClick={() =>
           sendEvent("click", {
             page: "/",
